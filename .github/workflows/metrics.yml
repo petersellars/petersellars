@@ -1,6 +1,10 @@
 name: Metrics
 
 on:
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit (optional)
+  workflow_dispatch:
   push: {branches: ["main"]}
 
 jobs:
@@ -42,3 +46,17 @@ jobs:
           user: petersellars
           base: activity, community
           config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  iso_calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: iso_calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: petersellars
+          base: ""
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
