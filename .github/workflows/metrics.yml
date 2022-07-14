@@ -15,8 +15,9 @@ jobs:
           filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
+          user: petersellars
           base: header
-          
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   repositories:
     runs-on: ubuntu-latest
@@ -26,4 +27,18 @@ jobs:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
+          user: petersellars
           base: repositories
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  activity_community_stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: activity_community_stats.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: petersellars
+          base: activity, community
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
