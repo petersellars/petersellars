@@ -10,5 +10,5 @@
 </a>
 
 <a href="https://github.com/peter_sellars">
-  <img align="center" width="49%" src="./iso_calender.svg" />
+  <img align="center" width="49%" src="./iso_calendar.svg" />
 </a>
