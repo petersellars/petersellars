@@ -60,3 +60,17 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+
+  issue_pr_lang:
+    runs-on: ubuntu-latests
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: issue_pr_lang.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: petersellars
+          base: ""
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          plugin_followup: yes
+          plugin_languages: yes
