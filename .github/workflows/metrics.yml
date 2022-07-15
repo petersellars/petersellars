@@ -85,7 +85,7 @@ jobs:
 
           user: petersellars
           base: ""
-          config_timezone: ${{ secret.USER_TIMEZONE }}
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_habits: yes
           plugin_habits_from: 200   # Use 200 events to compute habits
           plugin_habits_days: 14    # Keep only events from last 14 days
