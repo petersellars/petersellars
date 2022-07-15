@@ -74,3 +74,20 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_followup: yes
           plugin_languages: yes
+
+  habits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          user: petersellars
+          base: ""
+          config_timezone: ${{ secret.USER_TIMEZONE }}
+          plugin_habits: yes
+          plugin_habits_from: 200   # Use 200 events to compute habits
+          plugin_habits_days: 14    # Keep only events from last 14 days
+          plugin_habits_charts: yes # Display charts section
+          plugin_habits_trim: yes   # Trim unused hours on daily chart
