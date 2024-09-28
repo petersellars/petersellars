@@ -1,7 +1,46 @@
 <a href="https://github.com/petersellars">
   <img align="center" width="49%" src="./header.svg" />
 </a>
-<br/>
+
+```go
+package main
+
+import "fmt"
+
+type TechRadar struct {
+    url string
+}
+
+type Technologies struct {
+    languages []string
+    platforms []string
+    tools     []string
+}
+
+type PersonalInfo struct {
+    name         string
+    currentFocus string
+    mytechradar  TechRadar
+    technologies Technologies
+}
+
+func main() {
+    me := PersonalInfo{
+        name:         "Peter Sellars",
+        currentFocus: "Improving the development experience and process",
+        mytechradar: TechRadar{
+            url: "https://petersellars.github.io/techradar/",
+        },
+        technologies: Technologies{
+            languages: []string{"Go"},
+            platforms: []string{"AWS"},
+            tools:     []string{"Docker","Terraform"},
+        },
+    }
+
+    fmt.Println(me)
+}
+````
 <a href="https://github.com/petersellars">
   <img align="center" width="49%" src="./repositories.svg" />
 </a>
