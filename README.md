@@ -42,9 +42,9 @@ func main() {
 }
 ````
 <a href="https://petersellars.github.io/techradar/">
-<p style="display: flex; align-items: center; justify-content: center;">
-  <img width="20" src="./radar-icon-white.png" alt="Radar Icon" style="margin-right: 8px;" />
-  View My Personal Technology Radar
+<p>
+  <img width="20" src="./radar-icon-white.png" alt="Radar Icon" style="vertical-align: middle; padding-right: 5px;" />
+  <span style="vertical-align: middle;">View My Personal Technology Radar</span>
 </p>
 </a>
 <a href="https://github.com/petersellars">
