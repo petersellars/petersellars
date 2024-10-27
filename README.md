@@ -41,10 +41,8 @@ func main() {
     fmt.Println(me)
 }
 ````
-<a href="https://petersellars.github.io/techradar/">
-  <p><img width="25" valign="middle" src="./radar-icon-white.png" alt="Radar Icon"/>
-  <span valign="middle">View My Personal Technology Radar</span></p>
-</a>
+[![Static Badge](https://img.shields.io/badge/Click_to_view_my_personal_technology_radar-blue?logo=baserow&logoColor=white&labelColor=yellow)](https://petersellars.github.io/techradar)
+
 <a href="https://github.com/petersellars">
   <img align="center" width="49%" src="./repositories.svg" />
 </a>
