@@ -41,12 +41,18 @@ func main() {
     fmt.Println(me)
 }
 ````
-<a href="https://petersellars.github.io/techradar/">
-<p>
-  <img width="20" src="./radar-icon-white.png" alt="Radar Icon" style="vertical-align: middle; padding-right: 5px;" />
-  <span style="vertical-align: middle;">View My Personal Technology Radar</span>
-</p>
-</a>
+<table>
+  <tr>
+    <td valign="middle">
+      <img width="20" src="./radar-icon-white.png" alt="Radar Icon"/>
+    </td>
+    <td valign="middle">
+      <a href="https://petersellars.github.io/techradar/">
+      View My Personal Technology Radar
+      </a>
+    </td>
+  </tr>
+</table>
 <a href="https://github.com/petersellars">
   <img align="center" width="49%" src="./repositories.svg" />
 </a>
