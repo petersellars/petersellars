@@ -33,15 +33,14 @@ func main() {
         },
         technologies: Technologies{
             languages: []string{"Go"},
-            platforms: []string{"AWS"},
-            tools:     []string{"Docker","Terraform"},
-        },
+            platforms: []string{"AWS","Node.js"},
+            tools:     []string{"Docker","Terraform","Terragrunt"},
     }
 
     fmt.Println(me)
 }
 ````
-[![Static Badge](https://img.shields.io/badge/Click_to_view_my_personal_technology_radar-blue?logo=baserow&logoColor=white&labelColor=yellow)](https://petersellars.github.io/techradar)
+[![Static Badge](https://img.shields.io/badge/Personal_Technology_Radar-blue?logo=baserow&logoColor=white&labelColor=yellow)](https://petersellars.github.io/techradar)
 
 <a href="https://github.com/petersellars">
   <img align="center" width="49%" src="./repositories.svg" />
