@@ -10,11 +10,11 @@ on:
 jobs:
 
   github-metrics:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -24,9 +24,9 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   repositories:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -36,9 +36,9 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   activity_community_stats:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: activity_community_stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -48,9 +48,9 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   iso_calendar:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: iso_calendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -62,9 +62,9 @@ jobs:
           plugin_isocalendar_duration: half-year
 
   issue_pr_lang:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: issue_pr_lang.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -76,9 +76,9 @@ jobs:
           plugin_languages: yes
 
   habits:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -93,9 +93,9 @@ jobs:
           plugin_habits_trim: yes   # Trim unused hours on daily chart
 
   achievements:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@v3.33
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
