@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -26,7 +26,7 @@ jobs:
   repositories:
     runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -38,7 +38,7 @@ jobs:
   activity_community_stats:
     runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: activity_community_stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -50,7 +50,7 @@ jobs:
   iso_calendar:
     runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: iso_calendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -64,7 +64,7 @@ jobs:
   issue_pr_lang:
     runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: issue_pr_lang.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -78,7 +78,7 @@ jobs:
   habits:
     runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -95,7 +95,7 @@ jobs:
   achievements:
     runs-on: ubuntu-24.04
     steps:
-      - uses: lowlighter/metrics@v3.33
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
