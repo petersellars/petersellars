@@ -12,9 +12,10 @@ type TechRadar struct {
 }
 
 type Technologies struct {
-    languages []string
-    platforms []string
-    tools     []string
+    techniques []string
+    languages  []string
+    platforms  []string
+    tools      []string
 }
 
 type PersonalInfo struct {
@@ -32,9 +33,10 @@ func main() {
             url: "https://petersellars.github.io/techradar/",
         },
         technologies: Technologies{
-            languages: []string{"Go"},
-            platforms: []string{"AWS","Node.js"},
-            tools:     []string{"Docker","Terraform","Terragrunt"},
+            techniques: []string{"CI/CD","IaC"}
+            languages:  []string{"Go"},
+            platforms:  []string{"AWS","Node.js"},
+            tools:      []string{"Docker","Terraform","Terragrunt"},
     }
 
     fmt.Println(me)
