@@ -34,9 +34,10 @@ func main() {
         },
         technologies: Technologies{
             techniques: []string{"CI/CD","IaC"}
-            languages:  []string{"Go"},
+            languages:  []string{"Go", "Shell"},
             platforms:  []string{"AWS","Node.js"},
             tools:      []string{"Docker","Terraform","Terragrunt"},
+        }
     }
 
     fmt.Println(me)
