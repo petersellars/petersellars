@@ -10,7 +10,7 @@ on:
 jobs:
 
   github-metrics:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
     steps:
@@ -24,7 +24,7 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   repositories:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
@@ -36,7 +36,7 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   activity_community_stats:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
@@ -48,7 +48,7 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
   iso_calendar:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
@@ -62,7 +62,7 @@ jobs:
           plugin_isocalendar_duration: half-year
 
   issue_pr_lang:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
@@ -76,7 +76,7 @@ jobs:
           plugin_languages: yes
 
   habits:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
@@ -93,7 +93,7 @@ jobs:
           plugin_habits_trim: yes   # Trim unused hours on daily chart
 
   achievements:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
