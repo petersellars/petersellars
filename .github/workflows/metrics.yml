@@ -78,7 +78,7 @@ jobs:
   habits:
     runs-on: ubuntu-26.04
     steps:
-      - uses: lowlighter/metrics@v3.34
+      - uses: lowlighter/metrics@master
         with:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -95,7 +95,7 @@ jobs:
   achievements:
     runs-on: ubuntu-26.04
     steps:
-      - uses: lowlighter/metrics@v3.34
+      - uses: lowlighter/metrics@master
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
