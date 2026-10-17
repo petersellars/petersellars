@@ -45,12 +45,7 @@ func main() {
 ````
 ![metrics workflow](https://github.com/petersellars/petersellars/actions/workflows/metrics.yml/badge.svg) [![Static Badge](https://img.shields.io/badge/Personal_Technology_Radar-blue?logo=baserow&logoColor=white&labelColor=yellow)](https://petersellars.github.io/techradar)
 
-<a href="https://github.com/petersellars">
-  <img align="center" width="49%" src="./repositories.svg" />
-</a>
-<a href="https://github.com/petersellars">
-  <img align="center" width="49%" src="./activity_community_stats.svg" />
-</a>
+<a href="https://github.com/petersellars"><img align="center" width="49%" src="./repositories.svg" /></a><a href="https://github.com/petersellars"><img align="center" width="49%" src="./activity_community_stats.svg" /></a>
 
 <a href="https://github.com/petersellars">
   <img align="center" width="49%" src="./iso_calendar.svg" />

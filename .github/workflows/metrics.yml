@@ -86,7 +86,7 @@ jobs:
           user: petersellars
           base: ""
           config_timezone: ${{ secrets.USER_TIMEZONE }}
-          plugin_habits: yes
+          plugin_habits: no # Temporarily disable until upstream fix!!!
           plugin_habits_from: 50   # Use 50 events to compute habits
           plugin_habits_days: 7   # Keep only events from last 7 days
           plugin_habits_charts: yes # Display charts section
@@ -102,7 +102,7 @@ jobs:
 
           user: petersellars
           base: achievements
-          plugin_achievements: yes
+          plugin_achievements: no # Temporarily disable until upstream fix!!!
           plugin_achievements_threshold: B      # Display achievements with rank C or higher
           plugin_achievements_secrets: yes      # Display unlocked secrets achievements
           plugin_achievements_display: detailed # Use detailed display
